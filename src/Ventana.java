@@ -13,7 +13,7 @@ import java.awt.image.*;
  *
  * @author tonny_jho
  */
-public class Ventana extends JFrame{
+public class Ventana extends JFrame{    
     public Ventana(){
         super("Prueba de Ventana");
         Container c = getContentPane();
