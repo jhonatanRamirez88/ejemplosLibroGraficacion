@@ -32,7 +32,14 @@ public class ExGradiante extends JFrame {
     public void paint(Graphics g) {
         super.paint(g);
         Graphics2D g2 = (Graphics2D) g;
-        GradientPaint gp1 = new GradientPaint();
+        GradientPaint gp1 = new GradientPaint(50.0f, 25.0f, Color.blue, 50.0f, 225.0f, Color.black);
+        g2.setPaint(gp1);
+        Rectangle2D r1 = new Rectangle2D.Float(25, 25, 200, 200);
+        g2.fill(r1);
+        GradientPaint gp2 = new GradientPaint(250.0f, 25.0f, Color.blue, 450.0f, 225.0f, Color.black);
+        g2.setPaint(gp2);
+        Rectangle2D r2 = new Rectangle2D.Float(250, 25, 200, 200);
+        g2.fill(r2);
         
     }
 }
